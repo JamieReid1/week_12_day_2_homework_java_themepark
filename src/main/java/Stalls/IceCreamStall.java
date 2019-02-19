@@ -1,6 +1,8 @@
 package Stalls;
 
-public class IceCreamStall extends Stall {
+import Interfaces.IReviewed;
+
+public class IceCreamStall extends Stall implements IReviewed {
 
     public IceCreamStall(String name, String ownerName, int parkingSpot) {
         super(name, ownerName, parkingSpot);

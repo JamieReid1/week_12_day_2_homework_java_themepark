@@ -47,4 +47,10 @@ public class TobaccoStallTest {
         assertEquals(false, hereTodayGoneTobacco.isAllowedTo(child));
     }
 
+    @Test
+    public void canSetThenGetRating(){
+        hereTodayGoneTobacco.setRating(1);
+        assertEquals(1, hereTodayGoneTobacco.getRating());
+    }
+
 }

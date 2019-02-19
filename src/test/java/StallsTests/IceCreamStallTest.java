@@ -32,4 +32,10 @@ public class IceCreamStallTest {
         assertEquals(1, flakesNShakes.getParkingSpot());
     }
 
+    @Test
+    public void canSetThenGetRating(){
+        flakesNShakes.setRating(5);
+        assertEquals(5, flakesNShakes.getRating());
+    }
+
 }

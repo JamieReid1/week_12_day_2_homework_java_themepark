@@ -32,4 +32,10 @@ public class CandyFlossStallTest {
         assertEquals(2, funSpunCandy.getParkingSpot());
     }
 
+    @Test
+    public void canSetThenGetRating(){
+        funSpunCandy.setRating(2);
+        assertEquals(2, funSpunCandy.getRating());
+    }
+
 }

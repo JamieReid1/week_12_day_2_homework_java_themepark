@@ -5,6 +5,7 @@ public abstract class Stall {
     private String name;
     private String ownerName;
     private int parkingSpot;
+    private int rating;
 
     public Stall(String name, String ownerName, int parkingSpot){
         this.name = name;
@@ -22,5 +23,13 @@ public abstract class Stall {
 
     public int getParkingSpot() {
         return parkingSpot;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
     }
 }
