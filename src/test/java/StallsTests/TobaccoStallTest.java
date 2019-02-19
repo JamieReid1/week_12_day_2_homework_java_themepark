@@ -18,7 +18,7 @@ public class TobaccoStallTest {
     public void before(){
 
         hereTodayGoneTobacco = new TobaccoStall("Here Today, Gone Tobacco", "Joey Ramone", 3);
-        adult = new Visitor(30, 18, 100);
+        adult = new Visitor(30, 1.8, 100);
         child = new Visitor(8, 1.1, 10);
     }
 

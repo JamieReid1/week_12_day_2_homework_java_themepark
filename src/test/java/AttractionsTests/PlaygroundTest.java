@@ -29,7 +29,7 @@ public class PlaygroundTest {
     @Test
     public void isNotAllowed(){
         swingsAndThings = new Playground("Swings & Things");
-        adult = new Visitor(30, 18, 100);
+        adult = new Visitor(30, 1.8, 100);
         assertEquals(false, swingsAndThings.isAllowedTo(adult));
     }
 
