@@ -8,4 +8,7 @@ public abstract class Attraction {
         this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
 }
