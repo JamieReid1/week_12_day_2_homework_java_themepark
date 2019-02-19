@@ -9,6 +9,16 @@ public class Visitor {
         this.height = height;
         this.money = money;
     }
-    
 
+    public int getAge() {
+        return age;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public double getMoney() {
+        return money;
+    }
 }
