@@ -37,4 +37,10 @@ public class RollercoasterTest {
         assertEquals(false, pepsiMax.isAllowedTo(child));
     }
 
+    @Test
+    public void canSetThenGetRating(){
+        pepsiMax.setRating(5);
+        assertEquals(5, pepsiMax.getRating());
+    }
+
 }

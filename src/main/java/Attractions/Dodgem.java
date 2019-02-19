@@ -1,6 +1,8 @@
 package Attractions;
 
-public class Dodgem extends Attraction {
+import Interfaces.IReviewed;
+
+public class Dodgem extends Attraction implements IReviewed {
 
     public Dodgem(String name) {
         super(name);
