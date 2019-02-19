@@ -1,6 +1,7 @@
 package StallsTests;
 
 import Stalls.TobaccoStall;
+import Visitors.Visitor;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,12 +10,16 @@ import static org.junit.Assert.assertEquals;
 public class TobaccoStallTest {
 
     TobaccoStall hereTodayGoneTobacco;
+    Visitor adult;
+    Visitor child;
+
 
     @Before
     public void before(){
 
         hereTodayGoneTobacco = new TobaccoStall("Here Today, Gone Tobacco", "Joey Ramone", 3);
-
+        adult = new Visitor(30, 18, 100);
+        child = new Visitor(8, 1.1, 10);
     }
 
     @Test
@@ -30,6 +35,16 @@ public class TobaccoStallTest {
     @Test
     public void hasParkingSpot(){
         assertEquals(3, hereTodayGoneTobacco.getParkingSpot());
+    }
+
+    @Test
+    public void visitorCanBuyTobacco(){
+        assertEquals(true, hereTodayGoneTobacco.isAllowedTo(adult));
+    }
+
+    @Test
+    public void visitorCanNotBuyTobacco(){
+        assertEquals(false, hereTodayGoneTobacco.isAllowedTo(child));
     }
 
 }
