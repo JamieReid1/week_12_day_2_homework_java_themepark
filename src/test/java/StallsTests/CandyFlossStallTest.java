@@ -31,5 +31,5 @@ public class CandyFlossStallTest {
     public void hasParkingSpot(){
         assertEquals(2, funSpunCandy.getParkingSpot());
     }
-    
+
 }
